@@ -4,4 +4,5 @@ func argmax(x []float64) int {
 	key := 0
 	value := x[key]
 	for k, v := range x {
-		i
+		if v > value {
+			key = 
