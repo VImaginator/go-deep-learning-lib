@@ -8,4 +8,6 @@ func argmax(x []float64) int {
 			key = k
 			value = v
 		}
-	
+	}
+	return key
+}
