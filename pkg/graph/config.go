@@ -1,3 +1,3 @@
 package graph
 
-ty
+type Config struct {
