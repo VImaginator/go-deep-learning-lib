@@ -8,4 +8,5 @@ type Config struct {
 }
 
 func (c Config) Validate() Config {
-	c.BatchSize = ma
+	c.BatchSize = max(1, c.BatchSize)
+	if c.Le
