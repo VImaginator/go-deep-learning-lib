@@ -7,4 +7,4 @@ type Config struct {
 	Regularizer  Regularizer
 }
 
-func
+func (c Config) Validate() Con
