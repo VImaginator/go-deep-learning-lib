@@ -4,4 +4,7 @@ type Config struct {
 	BatchSize    uint64
 	LearningRate LearningRate
 	Optimizer    Optimizer
-	Regularizer  R
+	Regularizer  Regularizer
+}
+
+func
