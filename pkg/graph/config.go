@@ -7,4 +7,5 @@ type Config struct {
 	Regularizer  Regularizer
 }
 
-func (c Config) Validate() Con
+func (c Config) Validate() Config {
+	c.BatchSize = ma
