@@ -1,1 +1,4 @@
 package graph
+
+const (
+	DefaultBatc
