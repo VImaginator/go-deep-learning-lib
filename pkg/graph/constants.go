@@ -1,4 +1,4 @@
 package graph
 
 const (
-	DefaultBatc
+	DefaultBatchSize    uint64  
