@@ -2,4 +2,4 @@ package graph
 
 const (
 	DefaultBatchSize    uint64               = 1
-	De
+	DefaultLearningRate Cons
