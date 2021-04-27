@@ -57,3 +57,33 @@ func TestFeaturesShuffle(t *testing.T) {
 				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}},
 			},
 			Features{
+				X: [][]float64{{0.5}, {0.9}, {0.1}, {0.7}, {0.8}, {0.4}, {0}, {0.2}, {0.6}, {0.3}},
+				Y: [][]float64{{1, 0}, {1, 0}, {0, 1}, {1, 0}, {1, 0}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {0, 1}},
+			},
+		},
+	} {
+		t.Run(strconv.Itoa(k), func(t *testing.T) {
+			v.features.Shuffle()
+			got := v.features.X
+			want := v.want.X
+			for i := range want {
+				for j := range want[i] {
+					if want[i][j] != got[i][j] {
+						t.Fatalf("want %v, got %v", want, got)
+					}
+				}
+			}
+			got = v.features.Y
+			want = v.want.Y
+			for i := range want {
+				for j := range want[i] {
+					if want[i][j] != got[i][j] {
+						t.Fatalf("want %v, got %v", want, got)
+					}
+				}
+			}
+		})
+	}
+}
+
+func TestFeaturesSplit(t *testing.T) {
