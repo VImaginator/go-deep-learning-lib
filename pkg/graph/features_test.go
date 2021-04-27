@@ -29,3 +29,31 @@ func TestFeaturesClassWeights(t *testing.T) {
 				features.Y[i] = make([]float64, v.classes)
 				if i < v.minority {
 					features.Y[i][n] = 1
+				} else {
+					features.Y[i][rand.Intn(n)] = 1
+				}
+			}
+			features.Shuffle()
+			want := v.weights
+			features.Balance()
+			got := features.ClassWeights
+			for i := range want {
+				if want[i]-got[i] > 1e-9 {
+					t.Fatalf("want[%d] %g, got[%d] %g", i, want, i, got)
+				}
+			}
+		})
+	}
+}
+
+func TestFeaturesShuffle(t *testing.T) {
+	for k, v := range []struct {
+		features Features
+		want     Features
+	}{
+		{
+			Features{
+				X: [][]float64{{0.0}, {0.1}, {0.2}, {0.3}, {0.4}, {0.5}, {0.6}, {0.7}, {0.8}, {0.9}},
+				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}},
+			},
+			Features{
