@@ -106,3 +106,24 @@ func TestFeaturesSplit(t *testing.T) {
 				Y: [][]float64{{1, 0}, {1, 0}},
 			},
 		},
+	} {
+		t.Run(strconv.Itoa(k), func(t *testing.T) {
+			training, validating := v.data.Split(0.2)
+			want := v.training.X
+			got := training.X
+			for i := range want {
+				for j := range want[i] {
+					if want[i][j] != got[i][j] {
+						t.Errorf("want %v, got %v", want, got)
+					}
+				}
+			}
+
+			want = v.validating.Y
+			got = validating.Y
+			for i := range want {
+				for j := range want[i] {
+					if want[i][j] != got[i][j] {
+						t.Fatalf("want %v, got %v", want, got)
+					}
+				}
