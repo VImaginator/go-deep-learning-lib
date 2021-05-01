@@ -87,3 +87,22 @@ func TestFeaturesShuffle(t *testing.T) {
 }
 
 func TestFeaturesSplit(t *testing.T) {
+	for k, v := range []struct {
+		data       Features
+		training   Features
+		validating Features
+	}{
+		{
+			Features{
+				X: [][]float64{{0.0}, {0.1}, {0.2}, {0.3}, {0.4}, {0.5}, {0.6}, {0.7}, {0.8}, {0.9}},
+				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}, {1, 0}, {1, 0}},
+			},
+			Features{
+				X: [][]float64{{0.0}, {0.1}, {0.2}, {0.3}, {0.4}, {0.5}, {0.6}, {0.7}},
+				Y: [][]float64{{0, 1}, {0, 1}, {0, 1}, {0, 1}, {0, 1}, {1, 0}, {1, 0}, {1, 0}},
+			},
+			Features{
+				X: [][]float64{{0.8}, {0.9}},
+				Y: [][]float64{{1, 0}, {1, 0}},
+			},
+		},
