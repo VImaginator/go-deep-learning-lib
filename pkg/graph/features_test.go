@@ -127,3 +127,7 @@ func TestFeaturesSplit(t *testing.T) {
 						t.Fatalf("want %v, got %v", want, got)
 					}
 				}
+			}
+		})
+	}
+}
