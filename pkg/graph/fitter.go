@@ -1,4 +1,5 @@
 package graph
 
 type Fitter struct {
-	Epochs               u
+	Epochs               uint64
+	Training, Valida
