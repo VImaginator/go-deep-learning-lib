@@ -5,4 +5,5 @@ type Fitter struct {
 	Training, Validation Features
 }
 
-func (f Fitter) Pr
+func (f Fitter) Prepare() Fitter {
+	f.
