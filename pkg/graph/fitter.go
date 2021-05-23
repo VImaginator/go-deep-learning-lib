@@ -13,4 +13,4 @@ func (f Fitter) Prepare() Fitter {
 
 func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 	for i := 1; i <= int(f.Epochs); i++ {
-	
+		for j := range f.Tr
