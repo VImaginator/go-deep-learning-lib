@@ -16,4 +16,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 		for j := range f.Training.X {
 			a := g.Estimate(f.Training.X[j])
 			gradients := make([]float64, len(a))
-			for k := range grad
+			for k := range gradients {
+				grad
