@@ -18,4 +18,4 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 			gradients := make([]float64, len(a))
 			for k := range gradients {
 				gradients[k] = a[k] - f.Training.Y[j][k]
-				if f.Training.C
+				if f.Training.ClassWeights != nil {
