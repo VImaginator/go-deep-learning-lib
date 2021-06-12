@@ -19,4 +19,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 			for k := range gradients {
 				gradients[k] = a[k] - f.Training.Y[j][k]
 				if f.Training.ClassWeights != nil {
-					gradients[k] *= f.Training.Cl
+					gradients[k] *= f.Training.ClassWeights[k]
+		
