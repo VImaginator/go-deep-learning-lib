@@ -22,4 +22,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 					gradients[k] *= f.Training.ClassWeights[k]
 				}
 			}
-			g.Minimize(gradie
+			g.Minimize(gradients)
+			for k := rang
