@@ -23,4 +23,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 				}
 			}
 			g.Minimize(gradients)
-			for k := rang
+			for k := range w {
+				w[k]
