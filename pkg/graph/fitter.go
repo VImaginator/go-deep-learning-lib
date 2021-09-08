@@ -29,4 +29,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 		}
 		for j := range f.Validation.X {
 			a := g.Estimate(f.Validation.X[j])
-			gradients := make([]float64, len
+			gradients := make([]float64, len(a))
+			for k :
