@@ -33,4 +33,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 			for k := range gradients {
 				gradients[k] = a[k] - f.Validation.Y[j][k]
 			}
-			for k := range
+			for k := range w {
+				w[k].Write(Me
