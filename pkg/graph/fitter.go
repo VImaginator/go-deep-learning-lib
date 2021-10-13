@@ -34,4 +34,5 @@ func (f Fitter) Fit(g Graph, w ...MetricsWriter) {
 				gradients[k] = a[k] - f.Validation.Y[j][k]
 			}
 			for k := range w {
-				w[k].Write(Metrics{Epoch: i, Sample: j, Estimate: a, Act
+				w[k].Write(Metrics{Epoch: i, Sample: j, Estimate: a, Actual: f.Validation.Y[j]})
+		
