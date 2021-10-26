@@ -1,3 +1,5 @@
 package graph
 
-i
+import "math"
+
+type G
