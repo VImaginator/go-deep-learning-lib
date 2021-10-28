@@ -2,4 +2,6 @@ package graph
 
 import "math"
 
-type G
+type Graph []Layer
+
+func (g
