@@ -4,4 +4,5 @@ import "math"
 
 type Graph []Layer
 
-func (g Graph) Apply(c Config
+func (g Graph) Apply(c Config) {
+	for i := range g
