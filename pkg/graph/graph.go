@@ -4,4 +4,4 @@ import "math"
 
 type Graph []Layer
 
-func (g
+func (g Graph) Apply(c Config
