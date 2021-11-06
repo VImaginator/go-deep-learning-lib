@@ -8,4 +8,5 @@ func (g Graph) Apply(c Config) {
 	for i := range g {
 		if layer, ok := g[i].(*Minimizer); ok {
 			layer.learningRate = c.LearningRate
-			layer.optimi
+			layer.optimizer = c.Optimizer
+			layer.regu
