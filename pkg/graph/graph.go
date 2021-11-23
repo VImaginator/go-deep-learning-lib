@@ -10,3 +10,4 @@ func (g Graph) Apply(c Config) {
 			layer.learningRate = c.LearningRate
 			layer.optimizer = c.Optimizer
 			layer.regularizer = c.Regularizer
+			layer.batch = make([][][
