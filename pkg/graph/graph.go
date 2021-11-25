@@ -11,4 +11,4 @@ func (g Graph) Apply(c Config) {
 			layer.optimizer = c.Optimizer
 			layer.regularizer = c.Regularizer
 			layer.batch = make([][][]float64, c.BatchSize)
-			f
+			for j := range layer.batch
