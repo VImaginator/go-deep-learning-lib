@@ -12,4 +12,5 @@ func (g Graph) Apply(c Config) {
 			layer.regularizer = c.Regularizer
 			layer.batch = make([][][]float64, c.BatchSize)
 			for j := range layer.batch {
-				layer.batch[j] = make([][]float64, le
+				layer.batch[j] = make([][]float64, len(layer.gradients))
+		
