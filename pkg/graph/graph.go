@@ -14,4 +14,4 @@ func (g Graph) Apply(c Config) {
 			for j := range layer.batch {
 				layer.batch[j] = make([][]float64, len(layer.gradients))
 				for k := range layer.gradients {
-					layer.batch[j][k] = make([]float64, l
+					layer.batch[j][k] = make([]float64, len(layer.gradients[k]))
