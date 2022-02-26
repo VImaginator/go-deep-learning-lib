@@ -18,3 +18,7 @@ func (g Graph) Apply(c Config) {
 				}
 			}
 		}
+	}
+}
+
+func (g Gr
