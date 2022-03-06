@@ -21,4 +21,4 @@ func (g Graph) Apply(c Config) {
 	}
 }
 
-func (g Graph) Estimate(x []float
+func (g Graph) Estimate(x []float64) []float64 {
