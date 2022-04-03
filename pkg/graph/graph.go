@@ -23,4 +23,6 @@ func (g Graph) Apply(c Config) {
 
 func (g Graph) Estimate(x []float64) []float64 {
 	for i := range g {
-		x = g[i
+		x = g[i].Estimate(x)
+	}
+	re
