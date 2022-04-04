@@ -28,4 +28,4 @@ func (g Graph) Estimate(x []float64) []float64 {
 	return x
 }
 
-func (g Graph) G
+func (g Graph) Gradients() [][][]float6
