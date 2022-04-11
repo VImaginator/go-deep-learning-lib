@@ -30,4 +30,5 @@ func (g Graph) Estimate(x []float64) []float64 {
 
 func (g Graph) Gradients() [][][]float64 {
 	gradients := make([][][]float64, len(g))
-	for i := rang
+	for i := range gradients {
+	
