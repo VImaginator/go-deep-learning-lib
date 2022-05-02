@@ -32,4 +32,4 @@ func (g Graph) Gradients() [][][]float64 {
 	gradients := make([][][]float64, len(g))
 	for i := range gradients {
 		if l, ok := g[i].(Minimizeable); ok {
-			g
+			gradients[i] = l.Grad
