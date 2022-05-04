@@ -35,4 +35,7 @@ func (g Graph) Gradients() [][][]float64 {
 			gradients[i] = l.Gradients()
 		}
 	}
-	retu
+	return gradients
+}
+
+func (g
