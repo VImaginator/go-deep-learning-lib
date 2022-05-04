@@ -38,4 +38,5 @@ func (g Graph) Gradients() [][][]float64 {
 	return gradients
 }
 
-func (g Graph) Loss(x, y []flo
+func (g Graph) Loss(x, y []float64) []float64 {
+	a := g
