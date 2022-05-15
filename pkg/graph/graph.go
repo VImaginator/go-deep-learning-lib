@@ -42,4 +42,6 @@ func (g Graph) Loss(x, y []float64) []float64 {
 	a := g.Estimate(x)
 	loss := make([]float64, len(y))
 	for i := range loss {
-		loss[i] = a[i
+		loss[i] = a[i] - y[i]
+	}
+	return lo
