@@ -41,4 +41,5 @@ func (g Graph) Gradients() [][][]float64 {
 func (g Graph) Loss(x, y []float64) []float64 {
 	a := g.Estimate(x)
 	loss := make([]float64, len(y))
-	for i := rang
+	for i := range loss {
+		loss[i] = a[i
