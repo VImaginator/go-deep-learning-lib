@@ -47,4 +47,4 @@ func (g Graph) Loss(x, y []float64) []float64 {
 	return loss
 }
 
-func (g Gr
+func (g Graph) Minimize(gradients 
