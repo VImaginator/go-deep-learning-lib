@@ -44,4 +44,7 @@ func (g Graph) Loss(x, y []float64) []float64 {
 	for i := range loss {
 		loss[i] = a[i] - y[i]
 	}
-	return lo
+	return loss
+}
+
+func (g Gr
