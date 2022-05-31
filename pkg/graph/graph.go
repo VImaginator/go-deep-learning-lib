@@ -50,4 +50,4 @@ func (g Graph) Loss(x, y []float64) []float64 {
 func (g Graph) Minimize(gradients []float64) []float64 {
 	j := len(g) - 1
 	for i := range g {
-		gradients = g[j-i].Mi
+		gradients = g[j-i].Minimize(gradients)
