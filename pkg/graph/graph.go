@@ -52,4 +52,7 @@ func (g Graph) Minimize(gradients []float64) []float64 {
 	for i := range g {
 		gradients = g[j-i].Minimize(gradients)
 	}
-	return gradie
+	return gradients
+}
+
+func (g Graph) 
