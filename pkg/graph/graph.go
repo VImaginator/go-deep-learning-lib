@@ -55,4 +55,4 @@ func (g Graph) Minimize(gradients []float64) []float64 {
 	return gradients
 }
 
-func (g Graph) 
+func (g Graph) NumericGradients(x, y 
