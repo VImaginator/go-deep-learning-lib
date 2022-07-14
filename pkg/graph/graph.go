@@ -56,4 +56,5 @@ func (g Graph) Minimize(gradients []float64) []float64 {
 }
 
 func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
-	var cost = func(a, y []float64) f
+	var cost = func(a, y []float64) float64 {
+		var su
