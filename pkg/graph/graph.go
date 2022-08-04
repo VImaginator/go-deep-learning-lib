@@ -61,4 +61,7 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 		for i := range a {
 			sum += math.Pow(a[i]-y[i], 2)
 		}
-		retu
+		return 0.5 * sum
+	}
+
+	var zeros
