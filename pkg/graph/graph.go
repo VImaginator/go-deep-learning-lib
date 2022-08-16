@@ -64,4 +64,4 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 		return 0.5 * sum
 	}
 
-	var zeros = func(a [][][]f
+	var zeros = func(a [][][]float64) [][][]float6
