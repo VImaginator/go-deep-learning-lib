@@ -66,4 +66,5 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 
 	var zeros = func(a [][][]float64) [][][]float64 {
 		b := make([][][]float64, len(a))
-		for i :=
+		for i := range a {
+			b[i] = make
