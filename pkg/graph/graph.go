@@ -77,4 +77,5 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 
 	weights := g.Weights()
 	gradients := zeros(weights)
-	for i := 
+	for i := range weights {
+		for j := r
