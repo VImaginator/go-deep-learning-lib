@@ -79,4 +79,7 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 	gradients := zeros(weights)
 	for i := range weights {
 		for j := range weights[i] {
-			for k := range weights[i]
+			for k := range weights[i][j] {
+				w := weights[i][j][k]
+
+	
