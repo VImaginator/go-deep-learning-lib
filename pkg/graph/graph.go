@@ -82,4 +82,4 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 			for k := range weights[i][j] {
 				w := weights[i][j][k]
 
-	
+				weights[i][j][k
