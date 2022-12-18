@@ -88,4 +88,6 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 
 				weights[i][j][k] -= epsilon
 				minus := cost(g.Estimate(x), y)
-				weights[i]
+				weights[i][j][k] = w
+
+				gradients[i
