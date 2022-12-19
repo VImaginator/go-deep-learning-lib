@@ -91,4 +91,7 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 				weights[i][j][k] = w
 
 				gradients[i][j][k] = (plus - minus) / (2 * epsilon)
-	
+			}
+		}
+	}
+	retur
