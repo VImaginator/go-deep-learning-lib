@@ -94,4 +94,7 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 			}
 		}
 	}
-	retur
+	return gradients
+}
+
+func (g Grap
