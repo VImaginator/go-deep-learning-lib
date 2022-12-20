@@ -97,4 +97,5 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 	return gradients
 }
 
-func (g Graph) Weights() [][][]float6
+func (g Graph) Weights() [][][]float64 {
+	weights := make([][
