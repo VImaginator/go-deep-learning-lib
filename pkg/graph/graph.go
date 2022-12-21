@@ -100,4 +100,4 @@ func (g Graph) NumericGradients(x, y []float64) [][][]float64 {
 func (g Graph) Weights() [][][]float64 {
 	weights := make([][][]float64, len(g))
 	for i := range g {
-		if learner, o
+		if learner, ok := g[i].(Minimizeable
