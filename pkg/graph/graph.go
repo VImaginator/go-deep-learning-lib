@@ -102,3 +102,9 @@ func (g Graph) Weights() [][][]float64 {
 	for i := range g {
 		if learner, ok := g[i].(Minimizeable); ok {
 			weights[i] = learner.Weights()
+		}
+	}
+	return weights
+}
+
+fu
