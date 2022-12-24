@@ -109,4 +109,4 @@ func (g Graph) Weights() [][][]float64 {
 
 func New(layers ...Layer) Graph {
 	var graph = Graph(layers)
-	for i :
+	for i := 1; i < len(layers); 
