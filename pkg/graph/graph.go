@@ -107,4 +107,4 @@ func (g Graph) Weights() [][][]float64 {
 	return weights
 }
 
-fu
+func New(layers ...L
