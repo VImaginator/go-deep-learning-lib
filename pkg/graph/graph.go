@@ -113,4 +113,4 @@ func New(layers ...Layer) Graph {
 		graph[i].SetShape(layers[i-1].Shape())
 	}
 	for i := range graph {
-		i
+		if layer, ok := graph[i].(
