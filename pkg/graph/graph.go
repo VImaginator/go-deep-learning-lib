@@ -113,4 +113,5 @@ func New(layers ...Layer) Graph {
 		graph[i].SetShape(layers[i-1].Shape())
 	}
 	for i := range graph {
-		if layer, ok := graph[i].(Minimizeable); ok
+		if layer, ok := graph[i].(Minimizeable); ok {
+			minimizer :
