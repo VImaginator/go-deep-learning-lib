@@ -116,4 +116,7 @@ func New(layers ...Layer) Graph {
 		if layer, ok := graph[i].(Minimizeable); ok {
 			minimizer := Minimizer{gradients: layer.Gradients(), weights: layer.Weights()}
 			minimizer.Layer = graph[i]
-			graph[
+			graph[i] = &minimizer
+		}
+	}
+	r
