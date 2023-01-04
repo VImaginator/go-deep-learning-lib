@@ -119,4 +119,5 @@ func New(layers ...Layer) Graph {
 			graph[i] = &minimizer
 		}
 	}
-	r
+	return graph
+}
