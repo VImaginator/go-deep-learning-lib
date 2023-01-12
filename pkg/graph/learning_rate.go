@@ -1,3 +1,3 @@
 package graph
 
-type Learnin
+type LearningRate interface {
