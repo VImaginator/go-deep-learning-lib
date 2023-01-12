@@ -1,1 +1,3 @@
-package grap
+package graph
+
+type Learnin
