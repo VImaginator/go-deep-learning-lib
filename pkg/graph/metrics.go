@@ -24,3 +24,10 @@ func (m Metrics) String() string {
 	}
 	var loss = func(a, y []float64) float64 {
 		var sum float64
+		for k := range a {
+			sum += a[k] - y[k]
+		}
+		return sum
+	}
+	return fmt.Sprintf("epoch: %d, loss: %.4f, estimate: %s, actual: %s", m.Epoch, loss(m.Estimate, m.Actual), str(m.Estimate), str(m.Actual))
+}
