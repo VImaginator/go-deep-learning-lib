@@ -1,3 +1,3 @@
 package graph
 
-type Metr
+type MetricsWriter interface {
