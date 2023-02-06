@@ -1,4 +1,5 @@
 package graph
 
 type Minimizeable interface {
-	Gradients() [][]f
+	Gradients() [][]float64
+	Weights(
