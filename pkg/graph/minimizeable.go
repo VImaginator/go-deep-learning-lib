@@ -1,3 +1,4 @@
 package graph
 
-type Minimi
+type Minimizeable interface {
+	Gr
