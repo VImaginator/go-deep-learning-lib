@@ -26,3 +26,23 @@ func (m *Minimizer) Minimize(gradients []float64) []float64 {
 	m.regularize()
 	m.optimize()
 	lr := m.learningRate.Rate()
+	for i := range m.batch[0] {
+		for j := range m.batch[0][i] {
+			m.weights[i][j] -= lr * m.batch[0][i][j]
+		}
+	}
+	return gradients
+}
+
+func (m *Minimizer) average() {
+	batchSize := len(m.batch)
+	n := float64(batchSize)
+	for i := range m.batch[0] {
+		for j := range m.batch[0][i] {
+			m.batch[0][i][j] = m.batch[0][i][j] / n
+		}
+	}
+	for i := 1; i < int(batchSize); i++ {
+		for j := range m.batch[0] {
+			for k := range m.batch[0][j] {
+				m.batch[0][j][k] += m.batch[i][j][k] / n
