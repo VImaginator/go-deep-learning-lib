@@ -46,3 +46,22 @@ func (m *Minimizer) average() {
 		for j := range m.batch[0] {
 			for k := range m.batch[0][j] {
 				m.batch[0][j][k] += m.batch[i][j][k] / n
+			}
+		}
+	}
+}
+
+func (m *Minimizer) optimize() {
+	if m.optimizer == nil {
+		return
+	}
+	g := m.optimizer.Optimize(m.batch[0])
+	for i := range g {
+		copy(m.batch[0][i], g[i])
+	}
+}
+
+func (m *Minimizer) regularize() {
+	if m.regularizer != nil {
+		m.regularizer.Regularize(m.batch[0])
+	}
