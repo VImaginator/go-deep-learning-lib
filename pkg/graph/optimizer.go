@@ -1,3 +1,4 @@
 package graph
 
-type Optimizer interface
+type Optimizer interface {
+	Optimize(g
