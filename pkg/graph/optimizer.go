@@ -1,3 +1,3 @@
 package graph
 
-typ
+type Optimizer interface
