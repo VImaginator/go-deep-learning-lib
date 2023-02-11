@@ -65,3 +65,4 @@ func (m *Minimizer) regularize() {
 	if m.regularizer != nil {
 		m.regularizer.Regularize(m.batch[0])
 	}
+}
