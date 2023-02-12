@@ -22,3 +22,13 @@ func (b *Bias) Minimize(gradients []float64) []float64 {
 
 func (b *Bias) SetShape(shape []uint64) {
 	b.layer.SetShape(shape)
+	w := b.outputShape.Size()
+	b.localGradients = make([][]float64, 1)
+	b.weights = make([][]float64, 1)
+	b.localGradients[0] = make([]float64, w)
+	b.weights[0] = make([]float64, w)
+}
+
+func (b *Bias) String() string {
+	return "bias:"
+}
