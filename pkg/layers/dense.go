@@ -1,1 +1,3 @@
-package l
+package layers
+
+type Dense struct 
