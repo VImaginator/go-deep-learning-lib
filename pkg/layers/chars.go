@@ -10,3 +10,10 @@ const (
 	brown  = "\033[0;33m"
 	cyan   = "\033[0;36m"
 	purple = "\033[0;35m"
+	red    = "\033[0;31m"
+	white  = "\033[1;37m"
+	yellow = "\033[1;33m"
+	space  = " "
+	indent = "  "
+	tab    = "\t"
+)
