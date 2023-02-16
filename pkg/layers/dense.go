@@ -2,4 +2,8 @@ package layers
 
 type Dense struct {
 	bias    Bias
-	dense   Unbiase
+	dense   UnbiasedDense
+	Neurons uint64
+}
+
+func
