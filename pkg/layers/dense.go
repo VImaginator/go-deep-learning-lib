@@ -6,4 +6,4 @@ type Dense struct {
 	Neurons uint64
 }
 
-func (l *Dense) Estimate(in
+func (l *Dense) Estimate(input []float64) []flo
