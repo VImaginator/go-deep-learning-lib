@@ -8,4 +8,4 @@ type Dense struct {
 
 func (l *Dense) Estimate(input []float64) []float64 {
 	input = l.dense.Estimate(input)
-	
+	return l.bias.Estimate(in
