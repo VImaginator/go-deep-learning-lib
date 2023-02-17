@@ -7,4 +7,5 @@ type Dense struct {
 }
 
 func (l *Dense) Estimate(input []float64) []float64 {
-	input = l.dens
+	input = l.dense.Estimate(input)
+	
