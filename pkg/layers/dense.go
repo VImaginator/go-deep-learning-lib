@@ -15,4 +15,4 @@ func (l *Dense) Gradients() [][]float64 {
 	return append(l.bias.localGradients, l.dense.localGradients...)
 }
 
-func
+func (l *Dense) Minimize(gradien
