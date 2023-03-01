@@ -17,4 +17,4 @@ func (l *Dense) Gradients() [][]float64 {
 
 func (l *Dense) Minimize(gradients []float64) []float64 {
 	gradients = l.bias.Minimize(gradients)
-	return l.dens
+	return l.dense.Minimize(gradien
