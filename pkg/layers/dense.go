@@ -20,4 +20,5 @@ func (l *Dense) Minimize(gradients []float64) []float64 {
 	return l.dense.Minimize(gradients)
 }
 
-func (l *Dense) SetShape(shape []u
+func (l *Dense) SetShape(shape []uint64) {
+	l.dense.Neuron
