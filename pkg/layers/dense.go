@@ -23,4 +23,7 @@ func (l *Dense) Minimize(gradients []float64) []float64 {
 func (l *Dense) SetShape(shape []uint64) {
 	l.dense.Neurons = l.Neurons
 	l.dense.SetShape(shape)
-	l.bias.SetShape(l.dense.Shap
+	l.bias.SetShape(l.dense.Shape())
+}
+
+func (l *Dense)
