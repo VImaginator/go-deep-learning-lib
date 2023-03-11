@@ -26,4 +26,4 @@ func (l *Dense) SetShape(shape []uint64) {
 	l.bias.SetShape(l.dense.Shape())
 }
 
-func (l *Dense)
+func (l *Dense) Shape() []uint64 
