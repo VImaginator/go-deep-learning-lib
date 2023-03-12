@@ -30,4 +30,4 @@ func (l *Dense) Shape() []uint64 {
 	return l.bias.Shape()
 }
 
-func (l *Dense) 
+func (l *Dense) String() string {
