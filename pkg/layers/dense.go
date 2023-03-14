@@ -31,4 +31,4 @@ func (l *Dense) Shape() []uint64 {
 }
 
 func (l *Dense) String() string {
-	return l.dense.String()
+	return l.dense.String() + eol + l.bias.St
