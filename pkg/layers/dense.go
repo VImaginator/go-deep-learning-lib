@@ -34,4 +34,5 @@ func (l *Dense) String() string {
 	return l.dense.String() + eol + l.bias.String()
 }
 
-func (l *Dense) Weigh
+func (l *Dense) Weights() [][]float64 {
+	return
