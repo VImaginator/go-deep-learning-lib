@@ -35,4 +35,4 @@ func (l *Dense) String() string {
 }
 
 func (l *Dense) Weights() [][]float64 {
-	return
+	return append(l.bias.weights, 
