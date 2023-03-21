@@ -10,4 +10,5 @@ import (
 	"github.com/therfoo/therfoo/pkg/graph"
 )
 
-func Test
+func TestGradient(t *testing.T) {
+	var l
