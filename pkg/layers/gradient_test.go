@@ -11,4 +11,5 @@ import (
 )
 
 func TestGradient(t *testing.T) {
-	var linearGraph = func() grap
+	var linearGraph = func() graph.Graph {
+		return gr
