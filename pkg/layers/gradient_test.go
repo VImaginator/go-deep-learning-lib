@@ -16,4 +16,5 @@ func TestGradient(t *testing.T) {
 			&Input{2},
 			&Dense{Neurons: 2},
 			&Sigmoid{},
+			&Dense{Neurons: 1},
 			&
