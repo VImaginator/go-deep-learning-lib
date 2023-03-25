@@ -12,4 +12,6 @@ import (
 
 func TestGradient(t *testing.T) {
 	var linearGraph = func() graph.Graph {
-		return gr
+		return graph.New(
+			&Input{2},
+	
