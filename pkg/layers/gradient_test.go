@@ -14,4 +14,4 @@ func TestGradient(t *testing.T) {
 	var linearGraph = func() graph.Graph {
 		return graph.New(
 			&Input{2},
-	
+			&Dense{Neuro
