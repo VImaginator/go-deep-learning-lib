@@ -18,3 +18,7 @@ func TestGradient(t *testing.T) {
 			&Sigmoid{},
 			&Dense{Neurons: 1},
 			&Sigmoid{},
+		)
+	}
+
+	var polynomialGra
