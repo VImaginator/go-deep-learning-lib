@@ -21,4 +21,4 @@ func TestGradient(t *testing.T) {
 		)
 	}
 
-	var polynomialGra
+	var polynomialGraph = func() graph.Gr
