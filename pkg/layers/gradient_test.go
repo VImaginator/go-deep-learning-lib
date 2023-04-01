@@ -24,4 +24,5 @@ func TestGradient(t *testing.T) {
 	var polynomialGraph = func() graph.Graph {
 		return graph.New(
 			&Input{2},
-			&Dense
+			&Dense{Neurons: 1},
+			&Polynomial{De
