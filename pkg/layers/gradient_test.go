@@ -27,3 +27,7 @@ func TestGradient(t *testing.T) {
 			&Dense{Neurons: 1},
 			&Polynomial{Degree: 2},
 			&Sigmoid{},
+		)
+	}
+
+	var name = func
