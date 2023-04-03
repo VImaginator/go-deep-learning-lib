@@ -25,4 +25,5 @@ func TestGradient(t *testing.T) {
 		return graph.New(
 			&Input{2},
 			&Dense{Neurons: 1},
-			&Polynomial{De
+			&Polynomial{Degree: 2},
+			&Sigmoid{},
