@@ -31,4 +31,4 @@ func TestGradient(t *testing.T) {
 	}
 
 	var name = func(l graph.Layer) string {
-		type Stringer interface
+		type Stringer interface{ String() string }
