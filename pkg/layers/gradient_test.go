@@ -30,4 +30,5 @@ func TestGradient(t *testing.T) {
 		)
 	}
 
-	var name = func
+	var name = func(l graph.Layer) string {
+		type
