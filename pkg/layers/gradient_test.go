@@ -34,4 +34,6 @@ func TestGradient(t *testing.T) {
 		type Stringer interface{ String() string }
 		var s string
 		if stringer, ok := l.(Stringer); ok {
-			s = strings.Split(stringer.String(),
+			s = strings.Split(stringer.String(), "\n")[0]
+		} else {
+	
