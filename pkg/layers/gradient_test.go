@@ -36,4 +36,4 @@ func TestGradient(t *testing.T) {
 		if stringer, ok := l.(Stringer); ok {
 			s = strings.Split(stringer.String(), "\n")[0]
 		} else {
-			s = reflect.Typ
+			s = reflect.TypeOf(l).String()
