@@ -41,4 +41,5 @@ func TestGradient(t *testing.T) {
 		return s
 	}
 
-	var writer graph.MetricsWriterFunc = func(metrics graph.M
+	var writer graph.MetricsWriterFunc = func(metrics graph.Metrics) {
+		t.Log(me
