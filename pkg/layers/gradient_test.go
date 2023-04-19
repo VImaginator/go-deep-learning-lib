@@ -45,4 +45,4 @@ func TestGradient(t *testing.T) {
 		t.Log(metrics.String())
 	}
 
-	fo
+	for k, v := range
