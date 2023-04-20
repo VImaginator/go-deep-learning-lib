@@ -45,4 +45,5 @@ func TestGradient(t *testing.T) {
 		t.Log(metrics.String())
 	}
 
-	for k, v := range
+	for k, v := range []struct {
+		Epochs 
