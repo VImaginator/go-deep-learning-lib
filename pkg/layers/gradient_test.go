@@ -46,4 +46,5 @@ func TestGradient(t *testing.T) {
 	}
 
 	for k, v := range []struct {
-		Epochs 
+		Epochs uint64
+		Data   graph.
