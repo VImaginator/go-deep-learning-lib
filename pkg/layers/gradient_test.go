@@ -50,4 +50,5 @@ func TestGradient(t *testing.T) {
 		Data   graph.Features
 		Graph  graph.Graph
 	}{
-		{0, AND, li
+		{0, AND, linearGraph()},
+		{
