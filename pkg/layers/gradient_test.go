@@ -56,4 +56,4 @@ func TestGradient(t *testing.T) {
 		{3, XOR, linearGraph()},
 		{0, AND, polynomialGraph()},
 		{1, NAND, polynomialGraph()},
-		{2, OR, po
+		{2, OR, polynomialGraph()},
