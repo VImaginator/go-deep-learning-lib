@@ -58,4 +58,5 @@ func TestGradient(t *testing.T) {
 		{1, NAND, polynomialGraph()},
 		{2, OR, polynomialGraph()},
 		{3, XOR, polynomialGraph()},
-	
+	} {
+		t.Run(strconv.Itoa
