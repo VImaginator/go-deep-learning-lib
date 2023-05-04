@@ -59,4 +59,4 @@ func TestGradient(t *testing.T) {
 		{2, OR, polynomialGraph()},
 		{3, XOR, polynomialGraph()},
 	} {
-		t.Run(strconv.Itoa
+		t.Run(strconv.Itoa(k), func(t *testing.T)
