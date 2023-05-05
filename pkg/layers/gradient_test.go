@@ -61,3 +61,4 @@ func TestGradient(t *testing.T) {
 	} {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
 			v.Data.DisableClassWeights = true
+			v.Data.DisableShuffle 
