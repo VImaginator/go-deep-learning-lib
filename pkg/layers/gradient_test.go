@@ -60,4 +60,4 @@ func TestGradient(t *testing.T) {
 		{3, XOR, polynomialGraph()},
 	} {
 		t.Run(strconv.Itoa(k), func(t *testing.T) {
-			v.Data.Disa
+			v.Data.DisableClassWeights = true
