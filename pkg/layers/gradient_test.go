@@ -63,4 +63,4 @@ func TestGradient(t *testing.T) {
 			v.Data.DisableClassWeights = true
 			v.Data.DisableShuffle = true
 
-			v.Graph.Apply(gra
+			v.Graph.Apply(graph.Config{}.Validate())
