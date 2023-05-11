@@ -64,3 +64,5 @@ func TestGradient(t *testing.T) {
 			v.Data.DisableShuffle = true
 
 			v.Graph.Apply(graph.Config{}.Validate())
+
+			fitter := gra
