@@ -65,4 +65,4 @@ func TestGradient(t *testing.T) {
 
 			v.Graph.Apply(graph.Config{}.Validate())
 
-			fitter := gra
+			fitter := graph.Fitter{Training: 
