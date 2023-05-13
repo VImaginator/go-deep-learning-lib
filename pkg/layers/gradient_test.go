@@ -70,4 +70,6 @@ func TestGradient(t *testing.T) {
 
 			for m := range v.Data.X {
 				x := v.Data.X[m]
-				y := v.Da
+				y := v.Data.Y[m]
+
+				want
