@@ -72,4 +72,4 @@ func TestGradient(t *testing.T) {
 				x := v.Data.X[m]
 				y := v.Data.Y[m]
 
-				want
+				want := v.Graph.NumericGr
