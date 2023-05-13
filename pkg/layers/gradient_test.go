@@ -68,4 +68,5 @@ func TestGradient(t *testing.T) {
 			fitter := graph.Fitter{Training: v.Data}
 			fitter.Fit(v.Graph, writer)
 
-			for m := ra
+			for m := range v.Data.X {
+				x :=
