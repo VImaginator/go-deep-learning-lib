@@ -74,4 +74,5 @@ func TestGradient(t *testing.T) {
 
 				want := v.Graph.NumericGradients(x, y)
 
-				v.Graph.Minimize
+				v.Graph.Minimize(v.Graph.Loss(x, y))
+	
