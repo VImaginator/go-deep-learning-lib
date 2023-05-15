@@ -77,4 +77,4 @@ func TestGradient(t *testing.T) {
 				v.Graph.Minimize(v.Graph.Loss(x, y))
 				got := v.Graph.Gradients()
 
-				f
+				for i := range want {
