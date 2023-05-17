@@ -79,4 +79,5 @@ func TestGradient(t *testing.T) {
 
 				for i := range want {
 					for j := range want[i] {
-						for k := range
+						for k := range want[i][j] {
+							
