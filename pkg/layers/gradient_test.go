@@ -78,4 +78,5 @@ func TestGradient(t *testing.T) {
 				got := v.Graph.Gradients()
 
 				for i := range want {
-					for j := range want[
+					for j := range want[i] {
+						for k := range
