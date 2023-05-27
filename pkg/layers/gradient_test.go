@@ -81,4 +81,4 @@ func TestGradient(t *testing.T) {
 					for j := range want[i] {
 						for k := range want[i][j] {
 							if math.Abs(math.Abs(want[i][j][k]-got[i][j][k])) > epsilon {
-								t.Errorf("%s %d, weight: %d, want 
+								t.Errorf("%s %d, weight: %d, want %g, got %g", name(v.G
