@@ -2,4 +2,4 @@ package layers
 
 type Input Shape
 
-f
+func (i Input) Es
