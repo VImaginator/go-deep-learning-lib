@@ -7,4 +7,7 @@ func (i Input) Estimate(input []float64) []float64 {
 }
 
 func (i Input) Minimize(gradients []float64) []float64 {
-	return g
+	return gradients
+}
+
+func (i
