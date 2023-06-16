@@ -10,4 +10,4 @@ func (i Input) Minimize(gradients []float64) []float64 {
 	return gradients
 }
 
-func (i
+func (i Input) SetShape(in
