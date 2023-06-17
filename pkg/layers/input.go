@@ -16,4 +16,5 @@ func (i Input) Shape() []uint64 {
 	return Shape(i).Shape()
 }
 
-func (i Input) String
+func (i Input) String() string {
+	return 
