@@ -13,4 +13,7 @@ func (i Input) Minimize(gradients []float64) []float64 {
 func (i Input) SetShape(input []uint64) {}
 
 func (i Input) Shape() []uint64 {
-	retu
+	return Shape(i).Shape()
+}
+
+fun
