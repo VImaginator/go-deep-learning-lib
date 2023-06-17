@@ -17,4 +17,5 @@ func (i Input) Shape() []uint64 {
 }
 
 func (i Input) String() string {
-	return 
+	return "input:"
+}
