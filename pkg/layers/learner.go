@@ -1,3 +1,4 @@
 package layers
 
-type lear
+type learner struct {
+	weights        []
