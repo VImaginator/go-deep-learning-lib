@@ -1,4 +1,5 @@
 package layers
 
 type learner struct {
-	weights        []
+	weights        [][]float64
+	local
