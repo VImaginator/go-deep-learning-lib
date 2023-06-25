@@ -2,4 +2,7 @@ package layers
 
 type learner struct {
 	weights        [][]float64
-	localGradients []
+	localGradients [][]float64
+}
+
+fu
