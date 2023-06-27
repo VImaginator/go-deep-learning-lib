@@ -5,4 +5,4 @@ type learner struct {
 	localGradients [][]float64
 }
 
-fu
+func (l learner) Gradients() []
