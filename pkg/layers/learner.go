@@ -6,4 +6,4 @@ type learner struct {
 }
 
 func (l learner) Gradients() [][]float64 {
-	re
+	return l.localGradients
