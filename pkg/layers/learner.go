@@ -9,4 +9,5 @@ func (l learner) Gradients() [][]float64 {
 	return l.localGradients
 }
 
-func (l learner
+func (l learner) Weights() [][]float64 {
+	
