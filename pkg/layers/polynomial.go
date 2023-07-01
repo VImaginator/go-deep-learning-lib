@@ -3,4 +3,7 @@ package layers
 import (
 	"fmt"
 	"math"
-	"strings
+	"strings"
+)
+
+type Polyn
