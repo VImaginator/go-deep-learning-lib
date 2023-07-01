@@ -1,3 +1,6 @@
 package layers
 
-impo
+import (
+	"fmt"
+	"math"
+	"strings
