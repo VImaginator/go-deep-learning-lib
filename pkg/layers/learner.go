@@ -11,3 +11,4 @@ func (l learner) Gradients() [][]float64 {
 
 func (l learner) Weights() [][]float64 {
 	return l.weights
+}
