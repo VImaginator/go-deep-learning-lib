@@ -6,4 +6,6 @@ import (
 	"strings"
 )
 
-type Polyn
+type Polynomial struct {
+	layer
+	l
