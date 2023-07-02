@@ -11,4 +11,7 @@ type Polynomial struct {
 	learner
 	Degree int
 	input  []float64
-	terms  [][]
+	terms  [][]float64
+}
+
+func (l
