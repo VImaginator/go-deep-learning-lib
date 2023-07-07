@@ -14,4 +14,5 @@ type Polynomial struct {
 	terms  [][]float64
 }
 
-func (l *Polynomial) Estimate(input []float64) []flo
+func (l *Polynomial) Estimate(input []float64) []float64 {
+	copy(l.input, input)
