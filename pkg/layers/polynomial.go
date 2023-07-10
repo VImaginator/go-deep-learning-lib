@@ -18,4 +18,5 @@ func (l *Polynomial) Estimate(input []float64) []float64 {
 	copy(l.input, input)
 	for j := range l.terms {
 		var p float64
-		for k := range l.term
+		for k := range l.terms[j] {
+			l.terms[j][k]
