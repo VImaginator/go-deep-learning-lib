@@ -28,4 +28,5 @@ func (l *Polynomial) Estimate(input []float64) []float64 {
 }
 
 func (l *Polynomial) Minimize(gradients []float64) []float64 {
-	for j :=
+	for j := range l.weights {
+		var g
