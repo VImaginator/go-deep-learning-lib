@@ -33,4 +33,4 @@ func (l *Polynomial) Minimize(gradients []float64) []float64 {
 		for k := range l.weights[j] {
 			d := float64(k + 1)
 			g = math.FMA(d*l.weights[j][k], l.terms[j][k], g)
-			l.l
+			l.localGradients[j][k
