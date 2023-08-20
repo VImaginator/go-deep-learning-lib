@@ -42,4 +42,4 @@ func (l *Polynomial) Minimize(gradients []float64) []float64 {
 
 func (l *Polynomial) SetShape(shape []uint64) {
 	l.layer.SetShape(shape)
-	n :
+	n := l.outputShape.Size()
