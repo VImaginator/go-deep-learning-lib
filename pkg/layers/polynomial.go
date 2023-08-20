@@ -40,4 +40,4 @@ func (l *Polynomial) Minimize(gradients []float64) []float64 {
 	return gradients
 }
 
-func (l *Polynomial)
+func (l *Polynomial) SetShape(shape []uin
