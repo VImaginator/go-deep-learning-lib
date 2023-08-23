@@ -45,4 +45,5 @@ func (l *Polynomial) SetShape(shape []uint64) {
 	n := l.outputShape.Size()
 	l.input = make([]float64, n)
 	l.localGradients = make([][]float64, n)
-	l.terms = make([][]flo
+	l.terms = make([][]float64, n)
+	l.weights
