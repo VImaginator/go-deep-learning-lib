@@ -53,3 +53,5 @@ func (l *Polynomial) SetShape(shape []uint64) {
 		l.weights[j] = Random(l.Degree)
 	}
 }
+
+func (l *Polynomial) S
