@@ -58,4 +58,4 @@ func (l *Polynomial) String() string {
 	return l.toYAML()
 }
 
-func (l *Polynomia
+func (l *Polynomial) toYAML() strin
