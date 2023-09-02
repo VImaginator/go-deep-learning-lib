@@ -55,4 +55,7 @@ func (l *Polynomial) SetShape(shape []uint64) {
 }
 
 func (l *Polynomial) String() string {
-	return l.toYAML(
+	return l.toYAML()
+}
+
+func (l *Polynomia
