@@ -61,4 +61,5 @@ func (l *Polynomial) String() string {
 func (l *Polynomial) toYAML() string {
 	var s []string
 	s = append(s, "polynomial:")
-	s = append(s, fmt.Sprintf("%sgradients:"
+	s = append(s, fmt.Sprintf("%sgradients:", indent))
+	for _
