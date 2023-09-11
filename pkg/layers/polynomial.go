@@ -63,4 +63,4 @@ func (l *Polynomial) toYAML() string {
 	s = append(s, "polynomial:")
 	s = append(s, fmt.Sprintf("%sgradients:", indent))
 	for _, v := range l.localGradients {
-		s = append(s, fmt.
+		s = append(s, fmt.Sprintf("%s%s- %g", in
