@@ -65,4 +65,4 @@ func (l *Polynomial) toYAML() string {
 	for _, v := range l.localGradients {
 		s = append(s, fmt.Sprintf("%s%s- %g", indent, indent, v))
 	}
-	s
+	s = append(s, fmt.Spr
