@@ -82,4 +82,5 @@ func (l *Polynomial) toYAML() string {
 			s = append(s, fmt.Sprintf("%s%s%s- %g", indent, indent, indent, v))
 		}
 	}
-	return st
+	return strings.Join(s, eol)
+}
