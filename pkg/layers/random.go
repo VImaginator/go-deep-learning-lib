@@ -6,4 +6,4 @@ import (
 
 func Random(size int) []float64 {
 	w := make([]float64, size)
-	r := rand
+	r := rand.New(rand.NewSourc
