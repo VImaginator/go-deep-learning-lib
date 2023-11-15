@@ -6,4 +6,5 @@ import (
 
 func Random(size int) []float64 {
 	w := make([]float64, size)
-	r := rand.New(rand.NewSourc
+	r := rand.New(rand.NewSource(9868))
+	for i := 
