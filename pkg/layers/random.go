@@ -10,4 +10,5 @@ func Random(size int) []float64 {
 	for i := range w {
 		w[i] = r.NormFloat64()
 	}
-	
+	return w
+}
