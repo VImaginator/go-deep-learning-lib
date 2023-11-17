@@ -1,3 +1,6 @@
 package layers
 
-impor
+import (
+	"fmt"
+	"math"
+	"strings"
