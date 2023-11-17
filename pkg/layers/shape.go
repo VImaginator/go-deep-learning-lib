@@ -13,3 +13,6 @@ func (s Shape) Size() int {
 	var size uint64 = 1
 	for _, v := range s {
 		size *= v
+	}
+	return int(size)
+}
