@@ -6,4 +6,8 @@ import (
 	"strings"
 )
 
-type Sigmoid struc
+type Sigmoid struct {
+	layer
+}
+
+func (s *Sig
