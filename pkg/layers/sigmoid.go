@@ -10,4 +10,4 @@ type Sigmoid struct {
 	layer
 }
 
-func (s *Sig
+func (s *Sigmoid) Activate(z float
