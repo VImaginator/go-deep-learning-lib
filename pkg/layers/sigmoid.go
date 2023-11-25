@@ -11,4 +11,7 @@ type Sigmoid struct {
 }
 
 func (s *Sigmoid) Activate(z float64) float64 {
-	retur
+	return 1.0 / (1.0 + math.Exp(-z))
+}
+
+func
