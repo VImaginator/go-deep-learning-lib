@@ -18,4 +18,4 @@ func (s *Sigmoid) Derive(a float64) float64 {
 	return a * (1.0 - a)
 }
 
-func (s *Sigmo
+func (s *Sigmoid) Estimate(x []flo
