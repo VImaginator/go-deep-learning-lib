@@ -18,4 +18,5 @@ func (s *Sigmoid) Derive(a float64) float64 {
 	return a * (1.0 - a)
 }
 
-func (s *Sigmoid) Estimate(x []flo
+func (s *Sigmoid) Estimate(x []float64) []float64 {
+	for i := rang
