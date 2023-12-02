@@ -25,4 +25,4 @@ func (s *Sigmoid) Estimate(x []float64) []float64 {
 	return s.output
 }
 
-func (s
+func (s *Sigmoid) Minimize(l
