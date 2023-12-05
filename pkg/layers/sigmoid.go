@@ -25,4 +25,5 @@ func (s *Sigmoid) Estimate(x []float64) []float64 {
 	return s.output
 }
 
-func (s *Sigmoid) Minimize(loss []float64) []f
+func (s *Sigmoid) Minimize(loss []float64) []float64 {
+	for i := range
