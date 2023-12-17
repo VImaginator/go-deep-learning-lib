@@ -32,4 +32,5 @@ func (s *Sigmoid) Minimize(loss []float64) []float64 {
 	return loss
 }
 
-func (s *Sigmoid) String() stri
+func (s *Sigmoid) String() string {
+	lines := []
