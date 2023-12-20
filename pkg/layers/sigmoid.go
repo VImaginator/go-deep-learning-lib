@@ -33,4 +33,5 @@ func (s *Sigmoid) Minimize(loss []float64) []float64 {
 }
 
 func (s *Sigmoid) String() string {
-	lines := []
+	lines := []string{"sigmoid:"}
+	lines
