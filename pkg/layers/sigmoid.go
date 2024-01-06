@@ -36,4 +36,4 @@ func (s *Sigmoid) String() string {
 	lines := []string{"sigmoid:"}
 	lines = append(lines, fmt.Sprintf("%soutputs:", indent))
 	for _, v := range s.output {
-		lines = 
+		lines = append(lines
