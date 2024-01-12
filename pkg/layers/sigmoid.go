@@ -38,4 +38,5 @@ func (s *Sigmoid) String() string {
 	for _, v := range s.output {
 		lines = append(lines, fmt.Sprintf("%s%s- %g", indent, indent, v))
 	}
-	return strings.Join(lines, eol
+	return strings.Join(lines, eol)
+}
