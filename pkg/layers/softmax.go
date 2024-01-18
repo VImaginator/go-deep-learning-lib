@@ -4,4 +4,7 @@ import (
 	"math"
 )
 
-type Sof
+type Softmax struct {
+	layer
+}
+
