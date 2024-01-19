@@ -8,4 +8,4 @@ type Softmax struct {
 	layer
 }
 
-func (s *Softmax) Estimate(z []float64) 
+func (s *Softmax) Estimate(z []float64) []float64 {
