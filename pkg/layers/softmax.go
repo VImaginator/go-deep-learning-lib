@@ -21,4 +21,7 @@ func (s *Softmax) Estimate(z []float64) []float64 {
 	for k := range z {
 		s.output[k] = z[k] / sum
 	}
-	return s.
+	return s.output
+}
+
+func (s *Softmax) String() 
