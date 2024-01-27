@@ -18,4 +18,5 @@ func (s *Softmax) Estimate(z []float64) []float64 {
 		z[k] = math.Exp(v - max)
 		sum += z[k]
 	}
-	for k := range z 
+	for k := range z {
+		s.output[k] 
