@@ -46,3 +46,24 @@ func (d *UnbiasedDense) SetShape(shape []uint64) {
 	w := d.inputShape.Size()
 	n := d.Neurons
 	d.input = make([]float64, w)
+	d.output = make([]float64, n)
+	d.gradients = make([]float64, w)
+	d.localGradients = make([][]float64, n)
+	d.weights = make([][]float64, n)
+	for j := range d.weights {
+		d.localGradients[j] = make([]float64, w)
+		d.weights[j] = Random(w)
+	}
+}
+
+func (d *UnbiasedDense) String() string {
+	var s []string
+	s = append(s, "dense:")
+	s = append(s, fmt.Sprintf("%sinputs:", indent))
+	for _, v := range d.input {
+		s = append(s, fmt.Sprintf("%s%s- %g", indent, indent, v))
+	}
+	s = append(s, fmt.Sprintf("%soutputs:", indent))
+	for _, v := range d.output {
+		s = append(s, fmt.Sprintf("%s%s- %g", indent, indent, v))
+	}
