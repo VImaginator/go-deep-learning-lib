@@ -28,3 +28,21 @@ func (d *UnbiasedDense) Estimate(input []float64) []float64 {
 }
 
 func (d *UnbiasedDense) Minimize(gradients []float64) []float64 {
+	for k := range d.gradients {
+		d.gradients[k] = 0
+	}
+	for j := range d.weights {
+		for k := range d.weights[j] {
+			d.localGradients[j][k] = gradients[j] * d.input[k]
+			d.gradients[k] += gradients[j] * d.weights[j][k]
+		}
+	}
+	return d.gradients
+}
+
+func (d *UnbiasedDense) SetShape(shape []uint64) {
+	d.inputShape = shape
+	d.outputShape = Shape{d.Neurons}
+	w := d.inputShape.Size()
+	n := d.Neurons
+	d.input = make([]float64, w)
