@@ -67,3 +67,12 @@ func (d *UnbiasedDense) String() string {
 	for _, v := range d.output {
 		s = append(s, fmt.Sprintf("%s%s- %g", indent, indent, v))
 	}
+	s = append(s, fmt.Sprintf("%sweights:", indent))
+	for j := range d.weights {
+		s = append(s, fmt.Sprintf("%s%s-", indent, indent))
+		for k := range d.weights[j] {
+			s = append(s, fmt.Sprintf("%s%s%s- %g", indent, indent, indent, d.weights[j][k]))
+		}
+	}
+	return strings.Join(s, eol)
+}
