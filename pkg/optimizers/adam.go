@@ -1,1 +1,3 @@
-package opt
+package optimizers
+
+import "math"
