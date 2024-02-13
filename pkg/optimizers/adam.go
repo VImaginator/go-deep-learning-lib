@@ -4,4 +4,4 @@ import "math"
 
 type Adam struct {
 	epsilon   float64
-	gradie
+	gradients [][]float6
