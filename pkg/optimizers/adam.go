@@ -6,4 +6,7 @@ type Adam struct {
 	epsilon   float64
 	gradients [][]float64
 	momentum  Momentum
-	rmsprop   RMSp
+	rmsprop   RMSprop
+}
+
+func (m Adam
