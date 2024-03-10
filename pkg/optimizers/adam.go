@@ -14,3 +14,5 @@ func (m Adam) Apply(weights [][]float64) Adam {
 	for i := range gradients {
 		gradients[i] = make([]float64, len(weights[i]))
 	}
+	return Adam{
+		grad
