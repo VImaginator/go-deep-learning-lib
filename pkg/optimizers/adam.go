@@ -16,4 +16,7 @@ func (m Adam) Apply(weights [][]float64) Adam {
 	}
 	return Adam{
 		gradients: gradients,
-	
+	}
+}
+
+func (m A
