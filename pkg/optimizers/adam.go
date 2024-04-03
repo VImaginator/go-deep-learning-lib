@@ -22,4 +22,4 @@ func (m Adam) Apply(weights [][]float64) Adam {
 func (m Adam) Optimize(gradients [][]float64) [][]float64 {
 	v := m.momentum.Optimize(gradients)
 	s := m.rmsprop.Optimize(gradients)
-	
+	for i := range m.
