@@ -23,4 +23,5 @@ func (m Adam) Optimize(gradients [][]float64) [][]float64 {
 	v := m.momentum.Optimize(gradients)
 	s := m.rmsprop.Optimize(gradients)
 	for i := range m.gradients {
-		for j := range m.gradients[
+		for j := range m.gradients[i] {
+			m.gradients[i][
