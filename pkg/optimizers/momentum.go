@@ -24,3 +24,4 @@ func (m Momentum) Optimize(gradients [][]float64) [][]float64 {
 		}
 	}
 	return m.gradients
+}
