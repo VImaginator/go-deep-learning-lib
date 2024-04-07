@@ -1,3 +1,5 @@
 package optimizers
 
-import "
+import "math"
+
+type RMSprop 
