@@ -26,4 +26,6 @@ func (m Adam) Optimize(gradients [][]float64) [][]float64 {
 		for j := range m.gradients[i] {
 			m.gradients[i][j] = (v[i][j] / (math.Sqrt(s[i][j] + m.epsilon)))
 		}
-	
+	}
+	return m.gradients
+}
