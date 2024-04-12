@@ -2,4 +2,5 @@ package optimizers
 
 import "math"
 
-type RMSprop 
+type RMSprop struct {
+	gradients 
