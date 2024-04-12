@@ -3,4 +3,5 @@ package optimizers
 import "math"
 
 type RMSprop struct {
-	gradients 
+	gradients [][]float64
+	momentum  float6
