@@ -7,4 +7,5 @@ type RMSprop struct {
 	momentum  float64
 }
 
-func (m RMSprop) Apply(weights [][]float64) RMS
+func (m RMSprop) Apply(weights [][]float64) RMSprop {
+	gradients := 
