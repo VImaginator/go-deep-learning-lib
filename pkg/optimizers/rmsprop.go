@@ -4,4 +4,7 @@ import "math"
 
 type RMSprop struct {
 	gradients [][]float64
-	momentum  float6
+	momentum  float64
+}
+
+func (m RMSprop) Apply(wei
