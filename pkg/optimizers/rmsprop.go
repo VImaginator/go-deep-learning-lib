@@ -9,4 +9,5 @@ type RMSprop struct {
 
 func (m RMSprop) Apply(weights [][]float64) RMSprop {
 	gradients := make([][]float64, len(weights))
-	for i := range gradients 
+	for i := range gradients {
+		gradients[i] = make([]floa
