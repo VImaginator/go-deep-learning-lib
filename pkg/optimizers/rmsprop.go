@@ -14,4 +14,4 @@ func (m RMSprop) Apply(weights [][]float64) RMSprop {
 	}
 	return RMSprop{
 		gradients: gradients,
-	
+		momentum:  m.momentum
