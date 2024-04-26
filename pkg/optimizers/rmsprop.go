@@ -13,4 +13,5 @@ func (m RMSprop) Apply(weights [][]float64) RMSprop {
 		gradients[i] = make([]float64, len(weights[i]))
 	}
 	return RMSprop{
-		
+		gradients: gradients,
+	
