@@ -1,1 +1,5 @@
-package regul
+package regularizers
+
+import "math"
+
+type 
