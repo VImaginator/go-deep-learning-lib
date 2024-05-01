@@ -2,4 +2,5 @@ package regularizers
 
 import "math"
 
-type 
+type Lasso struct {
+	Lam
