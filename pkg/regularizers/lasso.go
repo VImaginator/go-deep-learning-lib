@@ -7,4 +7,5 @@ type Lasso struct {
 	weights [][]float64
 }
 
-func (r Lasso) Regularize(gradi
+func (r Lasso) Regularize(gradients [][]float64) {
+	if r
