@@ -8,4 +8,5 @@ type Lasso struct {
 }
 
 func (r Lasso) Regularize(gradients [][]float64) {
-	if r
+	if r.Lambda == 0 {
+		retu
