@@ -12,4 +12,5 @@ func (r Lasso) Regularize(gradients [][]float64) {
 		return
 	}
 	for i := range r.weights {
-		for j := range r.weights
+		for j := range r.weights[i] {
+			gradients[i][j]
