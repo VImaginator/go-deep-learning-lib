@@ -18,4 +18,4 @@ func (r Lasso) Regularize(gradients [][]float64) {
 	}
 }
 
-var DefaultLasso = Lass
+var DefaultLasso = Lasso{Lambda: 0.01}
